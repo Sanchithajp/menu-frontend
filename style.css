@@ -1,0 +1,356 @@
+/* Home Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ff69b4; /* Pink color */
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff1493; /* Darker pink on hover */
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+/* Home Section Styles */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 36px;
+    color: #ff69b4; /* Matching the color palette */
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 22px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Animated Background */
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* General styling for header */
+.restaurant-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Bow container styling */
+.bow-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Restaurant name styling */
+.bow-container h1 {
+    font-size: 3em; /* Adjust size as needed */
+    color: #ff1491ea; /* Pink color, adjust to match your palette */
+    margin: 0 20px; /* Space for the bows */
+    text-align: center;
+    font-weight: bold; /* Optional: makes the text stand out */
+}
+
+/* Bows styling */
+.bow {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Positioning bows */
+.bow-left {
+    margin-right: 10px; /* Space between bow and text */
+}
+
+.bow-right {
+    margin-left: 10px; /* Space between bow and text */
+}
+
+
+/* Menu Page Styles */
+/* Menu Page Styles */
+.menu-container {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.menu-container h1 {
+    font-size: 36px;
+    color: #ff69b4;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.food-grid {
+    display: flex;
+    justify-content: center; /* Center the grid items horizontally */
+    flex-wrap: wrap; /* Allow the items to wrap to the next line if necessary */
+    gap: 20px; /* Space between the menu items */
+}
+
+.menu-item {
+    background-color: #ffe4e1;
+    padding: 20px;
+    width: 250px; /* Fixed width for each menu item box */
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%; /* Set the width of the image to match the container */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+    border-radius: 10px;
+}
+
+.menu-item h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+  
+
+/* Style for the order message box */
+#order-message {
+    display: none; /* Hidden by default */
+    background-color: #ff69b4; /* Pink color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    position: fixed; /* Fixed position to always be in view */
+    top: 50%; /* Centered vertically */
+    left: 50%; /* Centered horizontally */
+    transform: translate(-50%, -50%); /* Centered */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+
+/* Services Page Styles */
+/* Services Page Styles */
+.services-container {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center; /* Center-align content inside the container */
+}
+
+.services-container h1 {
+    font-size: 36px;
+    color: #ff69b4;
+    margin-bottom: 40px;
+    text-align: center; /* Ensure the heading is centered */
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-block {
+    background-color: #ffe4e1;
+    padding: 20px;
+    width: 35%; /* Reduced width from 45% to 35% */
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service-block:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+}
+
+.service-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-block h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.service-block p {
+    font-size: 16px;
+    color: #333;
+}
+/* About Us Page Styles */
+.about-container {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 36px;
+    color: #ff69b4;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content {
+    background-color: #ffe4e1;
+    padding: 20px;
+    width: 80%; /* Adjust as needed */
+    max-width: 800px; /* Limit the width */
+    border-radius: 10px;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #333;
+}
+/* Contact Page Styles */
+/* Contact Page Styles */
+.contact-container {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 36px;
+    color: #ff69b4;
+    margin-bottom: 40px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form {
+    background-color: #ffe4e1;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff1493;
+}
